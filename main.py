@@ -24,12 +24,12 @@ dailouge_pics =[
 ]
 
 Greeting_gifs = [
-'https://tenor.com/view/namaste-hii-hello-namaskharam-gif-gif-18337586'
-'https://tenor.com/view/namaste-nbk-balayya-gif-thank-you-gif-18483316'
-'https://tenor.com/view/balayya-balakrishna-legend-gif-19115307'
-'https://tenor.com/view/namaskaram-namaste-hi-hello-balayya-gif-19087108'
-'https://tenor.com/view/hai-hi-hello-bala-krishna-gif-gif-18338525'
-'https://tenor.com/view/hai-hii-hi-hello-tata-gif-18338504'
+'https://tenor.com/view/namaste-hii-hello-namaskharam-gif-gif-18337586',
+'https://tenor.com/view/namaste-nbk-balayya-gif-thank-you-gif-18483316',
+'https://tenor.com/view/balayya-balakrishna-legend-gif-19115307',
+'https://tenor.com/view/namaskaram-namaste-hi-hello-balayya-gif-19087108',
+'https://tenor.com/view/hai-hi-hello-bala-krishna-gif-gif-18338525',
+'https://tenor.com/view/hai-hii-hi-hello-tata-gif-18338504',
 'https://tenor.com/view/nandamuri-balakrishna-says-assalaam-alaikum-nbk-balakrishna-gif-trending-gif-18337406'
 ]
 
