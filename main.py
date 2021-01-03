@@ -51,7 +51,7 @@ from discord.ext import commands
 from discord.utils import get
 import random
 
-client = commands.Bot(command_prefix='balayya ', case_insensitive=True)
+client = commands.Bot(command_prefix='balayya ', case_insensitive=True, help_command=None)
 
 @client.event
 async def on_ready():
@@ -62,9 +62,6 @@ async def on_ready():
 #for random fun dailouge pics
 @client.command(aliases=['fun d', 'fd'])
 async def fun(ctx):
-     @commands.command(
-        help="Shows funny pictures and gifs of balayya",
-        brief="Shows gifs."
     value = random.randint(0, 0xffffff)
     embed = discord.Embed(description = '__**Jai Balayya**__', color = value)
     random_link = random.choice(dailouge_pics)
@@ -112,5 +109,39 @@ async def on_command_error(ctx, error):
     embed = discord.Embed(description = msg, color = value)
     if isinstance(error,commands.MissingRequiredArgument):
         await ctx.send(f'{ctx.author.mention}', embed=embed)
+# My sample help command:
+@bot.command()
+async def help(ctx, args=None):
+    help_embed = discord.Embed(title="My Bot's Help!")
+    command_names_list = [x.name for x in bot.commands]
+
+    # If there are no arguments, just list the commands:
+    if not args:
+        help_embed.add_field(
+            name="List of supported commands:",
+            value="\n".join([str(i+1)+". "+x.name for i,x in enumerate(bot.commands)]),
+            inline=False
+        )
+        help_embed.add_field(
+            name="Details",
+            value="Type `.help <command name>` for more details about each command.",
+            inline=False
+        )
+
+    # If the argument is a command, get the help text from that command:
+    elif args in command_names_list:
+        help_embed.add_field(
+            name=args,
+            value=bot.get_command(args).help
+        )
+
+    # If someone is just trolling:
+    else:
+        help_embed.add_field(
+            name="Nope.",
+            value="Don't think I got that command, boss!"
+        )
+
+    await ctx.send(embed=help_embed)
     
 client.run('token')
