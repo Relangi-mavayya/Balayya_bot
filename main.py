@@ -1,15 +1,3 @@
-import discord
-from discord.ext import commands
-import random
-
-client = commands.Bot(command_prefix='=')
-
-@client.event
-async def on_ready():
-    print('Bot is ready')
-    await client.change_presence(activity=discord.Activity(type = discord.ActivityType.listening, name = 'balayya'))
-
-
 dailouge_pics =[
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/10.jpg?raw=true',
@@ -23,15 +11,26 @@ dailouge_pics =[
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/9.jpg?raw=true'
 ]
 
-Greeting_gifs = [
-'https://tenor.com/view/namaste-hii-hello-namaskharam-gif-gif-18337586',
-'https://tenor.com/view/namaste-nbk-balayya-gif-thank-you-gif-18483316',
-'https://tenor.com/view/balayya-balakrishna-legend-gif-19115307',
-'https://tenor.com/view/namaskaram-namaste-hi-hello-balayya-gif-19087108',
-'https://tenor.com/view/hai-hi-hello-bala-krishna-gif-gif-18338525',
-'https://tenor.com/view/hai-hii-hi-hello-tata-gif-18338504',
-'https://tenor.com/view/nandamuri-balakrishna-says-assalaam-alaikum-nbk-balakrishna-gif-trending-gif-18337406'
+
+greeting_gifs = [
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g1.gif?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g2.gif?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g3.gif?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g4.gif?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g5.gif?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/greetpics/g6.gif?raw=true'
 ]
+
+import discord
+from discord.ext import commands
+import random
+
+client = commands.Bot(command_prefix='balayya ')
+
+@client.event
+async def on_ready():
+    print('Bot is ready')
+    await client.change_presence(activity=discord.Activity(type = discord.ActivityType.listening, name = 'balayya'))
 
 
 
@@ -46,15 +45,20 @@ async def balayya(ctx):
 async def marriage(ctx):
     await ctx.send('https://kulfyapp.com/embed/2LN1DE')
 
+@client.command(aliases = ['greet', 'namaskaram'])
+async def namaste(ctx):
+    embed = discord.Embed(description = '**Namaskaram :pray: **', color = discord.Color.red())
+    random_greet = random.choice(greeting_gifs)
+    embed.set_image(url= random_greet)
+    await ctx.send(embed = embed)
+
+
+"""list_commands = ['Here are the list of commands', '=balayya for random dailouge Pics']
+
 @client.command()
-
-
-#list_commands = ['Here are the list of commands', '=balayya for random dailouge Pics']
-
-#@client.command()
-#async def commands(ctx):
-    #embed = discord.Embed(title= 'Commands', description= list_commands, color= discord.Color.red())
-    #embed.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
-    #await ctx.send(embed=embed)
+async def commands(ctx):
+    embed = discord.Embed(title= 'Commands', description= list_commands, color= discord.Color.red())
+    embed.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
+    await ctx.send(embed=embed)"""
 
 client.run('token')
