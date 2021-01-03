@@ -51,17 +51,20 @@ from discord.ext import commands
 from discord.utils import get
 import random
 
-client = commands.Bot(command_prefix='balayya ')
+client = commands.Bot(command_prefix='balayya ', case_insensitive=True)
 
 @client.event
 async def on_ready():
-    print('Bot is ready')
+    print('Balayya on grounds')
     await client.change_presence(activity=discord.Activity(type = discord.ActivityType.listening, name = 'balayya'))
 
 
 #for random fun dailouge pics
 @client.command(aliases=['fun d', 'fd'])
 async def fun(ctx):
+     @commands.command(
+        help="Shows funny pictures and gifs of balayya",
+        brief="Shows gifs."
     value = random.randint(0, 0xffffff)
     embed = discord.Embed(description = '__**Jai Balayya**__', color = value)
     random_link = random.choice(dailouge_pics)
@@ -110,5 +113,4 @@ async def on_command_error(ctx, error):
     if isinstance(error,commands.MissingRequiredArgument):
         await ctx.send(f'{ctx.author.mention}', embed=embed)
     
-
 client.run('token')
