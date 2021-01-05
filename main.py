@@ -201,7 +201,7 @@ class MyHelpCommand(commands.MinimalHelpCommand):
         value = random.randint(0, 0xffffff)
         embed_help = discord.Embed(color= value, description='__**Balayya a telugu film god**__ \n') 
         for page in self.paginator.pages:
-            e.description += page
+            embed_help.description += page
         await destination.send(embed=embed_help)
 
 client.help_command = MyHelpCommand()
