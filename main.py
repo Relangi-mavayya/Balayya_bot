@@ -1,14 +1,31 @@
+
 dailouge_pics =[
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/1-2-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/10-1-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/10.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/11-1-1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/12-1-2.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/13-1-1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/14-1-1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/15-3-1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/2-2-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/2.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/3-2-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/3.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/4-1-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/4.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/5-1-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/5.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/6-1-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/6.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/7-2-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/7.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/8-2-1.jpg?raw=true',
 'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/8.jpg?raw=true',
-'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/9.jpg?raw=true'
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/9-2-1.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/9.jpg?raw=true',
+'https://github.com/Relangi-mavayya/Balayya_bot/blob/main/Assets/Dialougepics/ruler.jpg?raw=true'
 ]
 
 
@@ -97,15 +114,49 @@ slogans=[
 '**Jiljil jiga ma Balayya Babu sega**',
 '**Uppukaaram Balayya meda chaavadu ma mamakaram**',
 '**Paina kinda oopu Balayya Babu thopu**',
+'**Ayodhya lo Ramayya……Andhra lo Balayya**',
+'**One two three…..Balayya babu mukhyamantri**',
+'**1-2-3-4 Balayya never before**',
+'**Ramudu- Bheemudu…….Balayya babu ma devudu**',
+'**Akkada Balayya…… Ikkada Balayya**',
+'**Aaha Balayya ….. ooho Balayya**',
+'**Adigo Balayya..Idigo balayya**',
+'**Coca-Cola Pepsi…Balayya Babu Sexy**',
+'**Annam lo Perugu Ledhu Balayya Babu ki Thirugu Ledu**',
+'**Palakura Pappu Balayya Babu Nippu**',
+'**Hyderabad…Secunderabad… Balayyababu Zindabad**',
+'**Pappu lo Popu Balayya Babu Thopu**',
+'**Vadevadu Videvadu Ma Balayya Babu ki Addu Evadu**',
+'**Jill Jill Jiga Maa Balayya Babu sega**',
+'**Bike loan..Car loan Balayaa Babu Cyclone**',
+'**Hero Honda Splendor Balayya Babu Thunder**',
+'**Varshakalam lo Current Kotha Ammaila Gundello Balayya Babu Motha**',
+'**Adavilo pudithe simham la puttali Maro janmantuunte balayya abhimanila puttali**',
+'**Palakura Pappu balayya babu nippu**',
+'**Big house small house balayya babu mansion House**',
+'**Ballayya Babu meeda Prema chavaduu marokkare meda Prema puttadu**',
+'**Arjuna palguna ma balayya babu dhi simha garjana**',
+'**Memu thinedhi uppu karam balayya babu meedha chavadhu maku mamakaram**',
+'**Ac Cooler – Balayya babu is ruler**',
+'**Smoking is injurious – Balayya babu dangerous**',
+'**Water quarter – balayya babu dictator**',
+'**Intlo undi swimming pool..balayya vaade word bloody fool**',
+'**Stethoscope tho vinte ochedi lab dubuuu Ma balayya tho petukunte avtharu gabbu gabbu**',
+'**Migatha heros antha tuppu balayyababu nippu**',
+'**Bongu Ringu Balayya Babu Kingu**',
+'**AM PM balyyababu CM**',
 '**Coco-cola Pepsi Balayya Babu Sexy**'
 ]
+
+balayya_slogan_words= ['balayya', 'Balayya', 'jai balayya', 'balakrishna']
+
 
 import discord
 from discord.ext import commands
 from discord.utils import get
 import random
 
-client = commands.Bot(command_prefix='balayya ', case_insensitive=True, help_command=None)
+client = commands.Bot(command_prefix='', help_command=None)
 
 @client.event
 async def on_ready():
@@ -114,45 +165,45 @@ async def on_ready():
 
 
 #for random fun dailouge pics
-@client.command(aliases=['fun d', 'fd'])
-async def fun(ctx):
+@client.command(aliases=['balayya fun', 'balayya fd'])
+async def balayya_fun(ctx):
     value = random.randint(0, 0xffffff)
     embed_fun = discord.Embed(description = '__**Jai Balayya**__', color = value)
     random_link = random.choice(dailouge_pics)
-    embed.set_image(url= random_link)
+    embed_fun.set_image(url= random_link)
     await ctx.send(embed = embed_fun)
 
-#for marriage scene
+"""#for marriage scene
 @client.command(aliases=['marry'])
 async def marriage(ctx):
-    await ctx.send('https://kulfyapp.com/embed/2LN1DE')
+    await ctx.send('https://kulfyapp.com/embed/2LN1DE')"""
 
 
 #for random movie dailouge pics
-@client.command(aliases=['movie d','md'])
-async def movie(ctx):
+@client.command(aliases=['balayya movie d','balayya md'])
+async def balayya_movie(ctx):
     value = random.randint(0, 0xffffff)
     embed_movied = discord.Embed(color = value) 
     random_movie_dialouge = random.choice(movie_dialouge)
-    embed.set_image(url= random_movie_dialouge)
+    embed_movied.set_image(url= random_movie_dialouge)
     await ctx.send(f'{ctx.author.mention}' , embed = embed_movied)
 
 #for random greets with that member mention
-@client.command(aliases = ['namaskaram','Namaskaramd'])
-async def namaste(ctx):
+@client.command(aliases = ['balayya namaskaram', 'namaskaram', 'namaste'])
+async def balayya_namaste(ctx):
     value = random.randint(0, 0xffffff)
-    embed_namaskaram = discord.Embed(description = '**Namaskaram :pray: **', color = value) 
+    embed_namaskaram = discord.Embed(description = f'**Namaskaram :pray: {ctx.author.mention} **', color = value) 
     random_greet = random.choice(greeting_gifs)
-    embed.set_image(url= random_greet)
+    embed_namaskaram.set_image(url= random_greet)
     await ctx.send(f'{ctx.author.mention}' , embed = embed_namaskaram)
 
-@client.command()
-async def greet(ctx, arg):
+@client.command(aliases=['balayya greet'])
+async def balayya_greet(ctx, arg):
     value = random.randint(0, 0xffffff)
     embed_greet = discord.Embed(color = value) 
     random_greet = random.choice(greeting_gifs)
-    embed.set_image(url= random_greet)
-    embed.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
+    embed_greet.set_image(url= random_greet)
+    embed_greet.set_footer(icon_url=ctx.author.avatar_url, text= f'Requested by {ctx.author.name}')
     await ctx.send( '**Namaskaram :pray: ** ' +str(arg) , embed = embed_greet)
 
 #if someone didnt mention someone
@@ -164,15 +215,31 @@ async def on_command_error(ctx, error):
     if isinstance(error,commands.MissingRequiredArgument):
         await ctx.send(f'{ctx.author.mention}', embed=embed_m_error)
 
-#for random fun dailouge pics
+"""#for random fun dailouge pics
 @client.command(aliases=['s',])
 async def slogan(ctx):
-    value = random.randint(0, 0xffffff)
+    #value = random.randint(0, 0xffffff)
     random_slogan = random.choice(slogans)
-    embed_slogan = discord.Embed(description = random_slogan, color = value)
-    await ctx.send(embed = embed_slogan)
+    #embed_slogan = discord.Embed(description = random_slogan, color = value)
+    await ctx.send(embed = random_slogan)"""
 
 
+@client.command(aliases=['jai balayya', 'Jai balayya', 'Balayya', 'balakrishna', 'balayya babu'] , pass_context=True)
+async def balayya(ctx):
+    if random.randint(1,10) == 5:
+        random_slogan = random.choice(slogans)
+        await ctx.send(embed= random_slogan)
+    else:
+        return 0
+
+"""@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if any(word in message.content for word in balayya_slogan_words):
+        await message.channel.send(random.choice(slogans))"""
+ 
 
 """# My sample help command:
 @client.command(aliases=['help','h'])
@@ -199,7 +266,7 @@ class MyHelpCommand(commands.MinimalHelpCommand):
     async def send_pages(self):
         destination = self.get_destination()
         value = random.randint(0, 0xffffff)
-        embed_help = discord.Embed(color= value, description='__**Balayya a telugu film god**__ \n') 
+        embed_help = discord.Embed(color= value, description='__**Balayya, The Telugu Film God**__ \n') 
         for page in self.paginator.pages:
             embed_help.description += page
         await destination.send(embed=embed_help)
