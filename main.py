@@ -156,7 +156,7 @@ from discord.ext import commands
 from discord.utils import get
 import random
 
-client = commands.Bot(command_prefix='', help_command=None)
+client = commands.Bot(command_prefix='balayya', help_command=None)
 
 @client.event
 async def on_ready():
@@ -165,40 +165,37 @@ async def on_ready():
 
 
 #for random fun dailouge pics
-@client.command(aliases=['balayya fun', 'balayya fd'])
-async def balayya_fun(ctx):
+@client.command(aliases=['fd'])
+async def fun(ctx):
     value = random.randint(0, 0xffffff)
     embed_fun = discord.Embed(description = '__**Jai Balayya**__', color = value)
     random_link = random.choice(dailouge_pics)
     embed_fun.set_image(url= random_link)
     await ctx.send(embed = embed_fun)
 
-"""#for marriage scene
-@client.command(aliases=['marry'])
-async def marriage(ctx):
-    await ctx.send('https://kulfyapp.com/embed/2LN1DE')"""
-
 
 #for random movie dailouge pics
-@client.command(aliases=['balayya movie d','balayya md'])
-async def balayya_movie(ctx):
+@client.command(aliases=['md'])
+async def movie(ctx):
     value = random.randint(0, 0xffffff)
     embed_movied = discord.Embed(color = value) 
     random_movie_dialouge = random.choice(movie_dialouge)
     embed_movied.set_image(url= random_movie_dialouge)
     await ctx.send(f'{ctx.author.mention}' , embed = embed_movied)
 
+
 #for random greets with that member mention
-@client.command(aliases = ['balayya namaskaram', 'namaskaram', 'namaste'])
-async def balayya_namaste(ctx):
+@client.command(aliases=['namaskaram', 'vanakam'])
+async def namaste(ctx):
     value = random.randint(0, 0xffffff)
     embed_namaskaram = discord.Embed(description = f'**Namaskaram :pray: {ctx.author.mention} **', color = value) 
     random_greet = random.choice(greeting_gifs)
     embed_namaskaram.set_image(url= random_greet)
     await ctx.send(f'{ctx.author.mention}' , embed = embed_namaskaram)
 
-@client.command(aliases=['balayya greet'])
-async def balayya_greet(ctx, arg):
+#will greet someone when we mention someone
+@client.command()
+async def greet(ctx, arg):
     value = random.randint(0, 0xffffff)
     embed_greet = discord.Embed(color = value) 
     random_greet = random.choice(greeting_gifs)
@@ -215,52 +212,31 @@ async def on_command_error(ctx, error):
     if isinstance(error,commands.MissingRequiredArgument):
         await ctx.send(f'{ctx.author.mention}', embed=embed_m_error)
 
-"""#for random fun dailouge pics
-@client.command(aliases=['s',])
+#for random fun dailouge pics
+@client.command(aliases=['s'])
 async def slogan(ctx):
     #value = random.randint(0, 0xffffff)
     random_slogan = random.choice(slogans)
     #embed_slogan = discord.Embed(description = random_slogan, color = value)
-    await ctx.send(embed = random_slogan)"""
+    await ctx.send(embed = random_slogan)
 
-
-@client.command(aliases=['jai balayya', 'Jai balayya', 'Balayya', 'balakrishna', 'balayya babu'] , pass_context=True)
+"""@client.command(pass_context=True)
 async def balayya(ctx):
-    if random.randint(1,10) == 5:
+    if random.randint(1,3) == 2:
         random_slogan = random.choice(slogans)
-        await ctx.send(embed= random_slogan)
+        await ctx.send(random_slogan)
     else:
         return 0
+"""
 
-"""@client.event
+@client.event
 async def on_message(message):
     if message.author == client.user:
         return
 
     if any(word in message.content for word in balayya_slogan_words):
-        await message.channel.send(random.choice(slogans))"""
+        await message.channel.send(random.choice(slogans))
  
-
-"""# My sample help command:
-@client.command(aliases=['help','h'])
-async def _help(ctx, args=None):
-    help_embed = discord.Embed(title="Balayya Help Commands")
-    command_names_list = [x.name for x in bot.commands]
-
-# If there are no arguments, just list the commands:
-if not args:
-    help_embed.add_field(name="List of supported commands:", value="\n".join([str(i+1)+". "+x.name for i,x in enumerate(bot.commands)]),inline=False)
-    help_embed.add_field(name="Details", value="Type `.help <command name>` for more details about each command.", inline=False)
-
-# If the argument is a command, get the help text from that command:
-elif args in command_names_list:
-    help_embed.add_field(name=args, value=bot.get_command(args).help)
-
-# If someone is just trolling:
-else:
-    help_embed.add_field(name="Nope.", value="Don't think I got that command, boss!")
-    await ctx.send(embed=help_embed)"""
-
 
 class MyHelpCommand(commands.MinimalHelpCommand):
     async def send_pages(self):
